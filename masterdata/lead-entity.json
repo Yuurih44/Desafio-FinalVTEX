@@ -1,0 +1,13 @@
+{
+  "acronym": "DF",
+  "name": "Leads do desafio final",
+  "primaryKeyType": "GUID",
+  "allowGetAll": true,
+  "fields": [
+    { "name": "firstName", "displayName": "Nome", "type": "Varchar 50" },
+    { "name": "lastName", "displayName": "Sobrenome", "type": "Varchar 50" },
+    { "name": "email", "displayName": "E-mail", "type": "Varchar 100" },
+    { "name": "interestCategory", "displayName": "Categoria de interesse", "type": "Varchar 100" },
+    { "name": "optIn", "displayName": "Receber novidades", "type": "Boolean" }
+  ]
+}

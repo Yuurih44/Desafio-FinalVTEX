@@ -1,0 +1,18 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": ["rich-text#footer"]
+  },
+  "footer-layout.mobile": {
+    "children": ["rich-text#footer"]
+  },
+  "rich-text#footer": {
+    "props": {
+      "text": "Loja",
+      "textAlignment": "CENTER",
+      "blockClass": "footer"
+    }
+  }
+}

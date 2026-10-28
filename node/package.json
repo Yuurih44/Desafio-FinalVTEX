@@ -1,0 +1,17 @@
+{
+  "name": "desafio-leads-service",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@vtex/api": "^7.0.0",
+    "co-body": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/co-body": "^6.1.0",
+    "@types/node": "^20.0.0",
+    "typescript": "5.5.3"
+  }
+}

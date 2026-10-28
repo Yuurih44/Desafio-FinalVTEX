@@ -1,0 +1,13 @@
+{
+  "lead-form": {},
+  "product-name-simple": {},
+  "promotion-badge": {},
+  "add-to-cart-button#comprar": {
+    "props": {
+      "text": "Adicionar ao carrinho",
+      "unavailableText": "Indisponível",
+      "onClickBehavior": "ensure-sku-selection",
+      "customPixelEventId": "add-to-cart-button"
+    }
+  }
+}

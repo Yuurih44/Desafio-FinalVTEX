@@ -1,0 +1,28 @@
+.container--desafioFinalTitulo {
+  justify-content: center;
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 20px;
+}
+.wrapper--desafioFinalTitulo {
+  width: 100%;
+  text-align: center;
+}
+.headingLevel1--desafioFinalTitulo {
+  margin: 16px 0;
+  color: #262626;
+  font-size: 32px;
+}
+.container--footer {
+  justify-content: center;
+  margin-top: 32px;
+  padding: 20px;
+  border-top: 1px solid #e0e0e0;
+  color: #666666;
+  font-size: 13px;
+}
+@media (max-width: 640px) {
+  .headingLevel1--desafioFinalTitulo {
+    font-size: 26px;
+  }
+}

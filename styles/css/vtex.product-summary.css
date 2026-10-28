@@ -1,0 +1,41 @@
+.container--vitrine {
+  padding: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: #ffffff;
+  text-align: left;
+}
+.nameContainer {
+  justify-content: flex-start;
+  min-height: 68px;
+  padding: 16px 0 12px;
+}
+.brandName {
+  color: #333333;
+  font-size: 15px;
+  font-weight: 500;
+}
+.imageContainer {
+  text-align: center;
+}
+
+.element--vitrine :global(.vtex-button) {
+  align-self: center;
+  width: 168px;
+  max-width: 100%;
+  height: 34px;
+  min-height: 34px;
+  margin-top: auto;
+  background-color: #333333;
+  border-color: #333333;
+  font-size: 12px;
+}
+
+.element--vitrine :global(.vtex-product-price-1-x-sellingPrice) {
+  margin-bottom: 16px;
+}
+
+.element--vitrine :global(.vtex-button) :global(.vtex-button__label) {
+  padding-left: 10px;
+  padding-right: 10px;
+}

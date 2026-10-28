@@ -1,0 +1,121 @@
+{
+  "tab-layout#desafio": {
+    "props": {
+      "defaultActiveTabId": "mais-vendidos",
+      "blockClass": "desafio"
+    },
+    "children": ["tab-list#desafio", "tab-content#desafio"]
+  },
+  "tab-list#desafio": {
+    "props": {
+      "blockClass": "desafioTabs"
+    },
+    "children": [
+      "tab-list.item#mais-vendidos",
+      "tab-list.item#promocoes",
+      "tab-list.item#novidades"
+    ]
+  },
+  "tab-list.item#mais-vendidos": {
+    "props": {
+      "tabId": "mais-vendidos",
+      "label": "Mais vendidos",
+      "defaultActiveTab": true,
+      "blockClass": "desafioTab"
+    }
+  },
+  "tab-list.item#promocoes": {
+    "props": {
+      "tabId": "promocoes",
+      "label": "Promoções",
+      "blockClass": "desafioTab"
+    }
+  },
+  "tab-list.item#novidades": {
+    "props": {
+      "tabId": "novidades",
+      "label": "Novidades",
+      "blockClass": "desafioTab"
+    }
+  },
+  "tab-content#desafio": {
+    "props": {
+      "blockClass": "desafioContent"
+    },
+    "children": [
+      "tab-content.item#mais-vendidos",
+      "tab-content.item#promocoes",
+      "tab-content.item#novidades"
+    ]
+  },
+  "tab-content.item#mais-vendidos": {
+    "props": {
+      "tabId": "mais-vendidos"
+    },
+    "children": ["shelf#desafio-mais-vendidos"]
+  },
+  "tab-content.item#promocoes": {
+    "props": {
+      "tabId": "promocoes"
+    },
+    "children": ["shelf#desafio-promocoes"]
+  },
+  "tab-content.item#novidades": {
+    "props": {
+      "tabId": "novidades"
+    },
+    "children": ["shelf#desafio-novidades"]
+  },
+  "shelf#desafio-mais-vendidos": {
+    "blocks": ["product-summary.shelf#vitrine"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "hideUnavailableItems": true
+    }
+  },
+  "shelf#desafio-promocoes": {
+    "blocks": ["product-summary.shelf#vitrine"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC",
+      "collection": "161",
+      "hideUnavailableItems": true
+    }
+  },
+  "shelf#desafio-novidades": {
+    "blocks": ["product-summary.shelf#vitrine"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "hideUnavailableItems": true
+    }
+  },
+  "product-summary.shelf#vitrine": {
+    "props": {
+      "blockClass": "vitrine"
+    },
+    "children": [
+      "product-summary-image#vitrine",
+      "product-summary-name",
+      "promotion-badge",
+      "product-list-price#summary",
+      "product-selling-price#summary",
+      "add-to-cart-button#comprar"
+    ]
+  },
+  "product-summary-image#vitrine": {
+    "props": {
+      "aspectRatio": "1:1",
+      "maxHeight": 220,
+      "showBadge": false
+    }
+  },
+  "product-list-price#summary": {
+    "props": {
+      "message": "De {listPriceValue}"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "message": "Por {sellingPriceValue}"
+    }
+  }
+}

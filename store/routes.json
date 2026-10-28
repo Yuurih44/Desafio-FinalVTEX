@@ -1,0 +1,8 @@
+{
+  "store.product": {
+    "path": "/:slug/p"
+  },
+  "store.custom#desafio-final": {
+    "path": "/desafio-final"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "vendor": "econverse",
+  "name": "store-theme",
+  "version": "5.2.1",
+  "builders": {
+    "react": "3.x",
+    "node": "7.x",
+    "styles": "2.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.store": "2.x",
+    "vtex.store-resources": "0.x",
+    "vtex.store-header": "2.x",
+    "vtex.store-footer": "2.x",
+    "vtex.store-components": "3.x",
+    "vtex.product-context": "0.x",
+    "vtex.product-summary": "2.x",
+    "vtex.product-price": "1.x",
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.flex-layout": "0.x",
+    "vtex.rich-text": "0.x",
+    "vtex.shelf": "1.x",
+    "vtex.tab-layout": "0.x",
+    "vtex.menu": "2.x",
+    "vtex.minicart": "2.x",
+    "vtex.login": "2.x",
+    "vtex.store-drawer": "0.x",
+    "vtex.locale-switcher": "0.x",
+    "vtex.sticky-layout": "0.x",
+    "vtex.telemarketing": "2.x",
+    "vtex.product-list": "0.x",
+    "vtex.checkout-summary": "0.x"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/dataentities/DF*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/dataentities/DF*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

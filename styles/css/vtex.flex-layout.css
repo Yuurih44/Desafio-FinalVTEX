@@ -1,0 +1,73 @@
+.flexRowContent--menu-link,
+.flexRowContent--main-header {
+  padding: 0 0.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 80rem) {
+  .flexRowContent--menu-link,
+  .flexRowContent--main-header {
+    padding: 0 0.25rem;
+  }
+}
+
+.flexRowContent--menu-link {
+  background-color: #03044e;
+  color: #fff;
+}
+
+.flexRowContent--main-header {
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--main-header-mobile {
+  align-items: center;
+  padding: 0.625rem 0.5rem;
+  background-color: #f0f0f0;
+}
+
+.flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
+  color: #727273;
+  font-size: 14px;
+}
+
+.flexRow--product {
+  max-width: 1200px;
+  margin: 32px auto;
+  padding: 0 24px;
+}
+
+.flexRowContent--productBuy :global(.vtex-button) {
+  width: 180px;
+  height: 36px;
+  min-height: 36px;
+  background-color: #333333;
+  border-color: #333333;
+  font-size: 13px;
+}
+
+.flexRowContent--productBuy :global(.vtex-button__label) {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media (max-width: 640px) {
+  .flexRowContent--product {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .flexRowContent--product .stretchChildrenWidth {
+    width: 100% !important;
+  }
+}

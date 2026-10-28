@@ -1,0 +1,61 @@
+.container--desafio {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+.listContainer--desafioTabs {
+  justify-content: center;
+  gap: 8px;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 28px;
+  padding: 6px;
+  background: #ffffff;
+  border-bottom: 1px solid #dedede;
+}
+.listItem--desafioTab {
+  margin: 0;
+  padding: 0;
+}
+.listItem--desafioTab :global(.vtex-button) {
+  min-height: 42px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  border-radius: 0;
+  background-color: #ffffff;
+  color: #666666;
+  box-shadow: none;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: none;
+}
+.listItemActive--desafioTab :global(.vtex-button) {
+  background-color: #ffffff;
+  color: #262626;
+  border-bottom-color: #262626;
+  box-shadow: none;
+}
+.contentContainer--desafioContent {
+  margin: 0 auto;
+  padding: 0;
+}
+@media screen and (max-width: 640px) {
+  .container--desafio {
+    padding: 0 12px;
+  }
+  .listContainer--desafioTabs {
+    gap: 2px;
+    padding: 4px;
+    margin-bottom: 20px;
+  }
+  .listItem--desafioTab :global(.vtex-button) {
+    font-size: 11px;
+    min-height: 42px;
+  }
+  .listItem--desafioTab :global(.vtex-button__label) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

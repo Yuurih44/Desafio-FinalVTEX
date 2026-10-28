@@ -1,0 +1,23 @@
+{
+  "store.home": {
+    "blocks": [
+      "rich-text#desafio-final-titulo",
+      "tab-layout#desafio",
+      "lead-form"
+    ]
+  },
+  "store.custom#desafio-final": {
+    "blocks": [
+      "rich-text#desafio-final-titulo",
+      "tab-layout#desafio",
+      "lead-form"
+    ]
+  },
+  "rich-text#desafio-final-titulo": {
+    "props": {
+      "text": "# Desafio final",
+      "textAlignment": "CENTER",
+      "blockClass": "desafioFinalTitulo"
+    }
+  }
+}
